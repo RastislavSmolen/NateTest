@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63C2B33B28798F160055FCDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C2B33A28798F160055FCDA /* AppDelegate.swift */; };
+		63C2B33D28798F160055FCDA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C2B33C28798F160055FCDA /* SceneDelegate.swift */; };
+		63C2B33F28798F160055FCDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C2B33E28798F160055FCDA /* ViewController.swift */; };
+		63C2B34228798F160055FCDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63C2B34028798F160055FCDA /* Main.storyboard */; };
+		63C2B34528798F160055FCDA /* NateAI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 63C2B34328798F160055FCDA /* NateAI.xcdatamodeld */; };
+		63C2B34728798F190055FCDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63C2B34628798F190055FCDA /* Assets.xcassets */; };
+		63C2B34A28798F190055FCDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63C2B34828798F190055FCDA /* LaunchScreen.storyboard */; };
+		63C2B35528798F190055FCDA /* NateAITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C2B35428798F190055FCDA /* NateAITests.swift */; };
+		63C2B36028798F190055FCDA /* NateAIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C2B35F28798F190055FCDA /* NateAIUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		63C2B35128798F190055FCDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63C2B32F28798F160055FCDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63C2B33628798F160055FCDA;
+			remoteInfo = NateAI;
+		};
+		63C2B35C28798F190055FCDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63C2B32F28798F160055FCDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63C2B33628798F160055FCDA;
+			remoteInfo = NateAI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		63C2B33728798F160055FCDA /* NateAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NateAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63C2B33A28798F160055FCDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		63C2B33C28798F160055FCDA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		63C2B33E28798F160055FCDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		63C2B34128798F160055FCDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		63C2B34428798F160055FCDA /* NateAI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NateAI.xcdatamodel; sourceTree = "<group>"; };
+		63C2B34628798F190055FCDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63C2B34928798F190055FCDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		63C2B34B28798F190055FCDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63C2B35028798F190055FCDA /* NateAITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NateAITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		63C2B35428798F190055FCDA /* NateAITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NateAITests.swift; sourceTree = "<group>"; };
+		63C2B35628798F190055FCDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63C2B35B28798F190055FCDA /* NateAIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NateAIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		63C2B35F28798F190055FCDA /* NateAIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NateAIUITests.swift; sourceTree = "<group>"; };
+		63C2B36128798F190055FCDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63C2B33428798F160055FCDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63C2B34D28798F190055FCDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63C2B35828798F190055FCDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		63C2B32E28798F160055FCDA = {
+			isa = PBXGroup;
+			children = (
+				63C2B33928798F160055FCDA /* NateAI */,
+				63C2B35328798F190055FCDA /* NateAITests */,
+				63C2B35E28798F190055FCDA /* NateAIUITests */,
+				63C2B33828798F160055FCDA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		63C2B33828798F160055FCDA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63C2B33728798F160055FCDA /* NateAI.app */,
+				63C2B35028798F190055FCDA /* NateAITests.xctest */,
+				63C2B35B28798F190055FCDA /* NateAIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63C2B33928798F160055FCDA /* NateAI */ = {
+			isa = PBXGroup;
+			children = (
+				63C2B33A28798F160055FCDA /* AppDelegate.swift */,
+				63C2B33C28798F160055FCDA /* SceneDelegate.swift */,
+				63C2B33E28798F160055FCDA /* ViewController.swift */,
+				63C2B34028798F160055FCDA /* Main.storyboard */,
+				63C2B34628798F190055FCDA /* Assets.xcassets */,
+				63C2B34828798F190055FCDA /* LaunchScreen.storyboard */,
+				63C2B34B28798F190055FCDA /* Info.plist */,
+				63C2B34328798F160055FCDA /* NateAI.xcdatamodeld */,
+			);
+			path = NateAI;
+			sourceTree = "<group>";
+		};
+		63C2B35328798F190055FCDA /* NateAITests */ = {
+			isa = PBXGroup;
+			children = (
+				63C2B35428798F190055FCDA /* NateAITests.swift */,
+				63C2B35628798F190055FCDA /* Info.plist */,
+			);
+			path = NateAITests;
+			sourceTree = "<group>";
+		};
+		63C2B35E28798F190055FCDA /* NateAIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				63C2B35F28798F190055FCDA /* NateAIUITests.swift */,
+				63C2B36128798F190055FCDA /* Info.plist */,
+			);
+			path = NateAIUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63C2B33628798F160055FCDA /* NateAI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63C2B36428798F190055FCDA /* Build configuration list for PBXNativeTarget "NateAI" */;
+			buildPhases = (
+				63C2B33328798F160055FCDA /* Sources */,
+				63C2B33428798F160055FCDA /* Frameworks */,
+				63C2B33528798F160055FCDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NateAI;
+			productName = NateAI;
+			productReference = 63C2B33728798F160055FCDA /* NateAI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		63C2B34F28798F190055FCDA /* NateAITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63C2B36728798F190055FCDA /* Build configuration list for PBXNativeTarget "NateAITests" */;
+			buildPhases = (
+				63C2B34C28798F190055FCDA /* Sources */,
+				63C2B34D28798F190055FCDA /* Frameworks */,
+				63C2B34E28798F190055FCDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63C2B35228798F190055FCDA /* PBXTargetDependency */,
+			);
+			name = NateAITests;
+			productName = NateAITests;
+			productReference = 63C2B35028798F190055FCDA /* NateAITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		63C2B35A28798F190055FCDA /* NateAIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63C2B36A28798F190055FCDA /* Build configuration list for PBXNativeTarget "NateAIUITests" */;
+			buildPhases = (
+				63C2B35728798F190055FCDA /* Sources */,
+				63C2B35828798F190055FCDA /* Frameworks */,
+				63C2B35928798F190055FCDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63C2B35D28798F190055FCDA /* PBXTargetDependency */,
+			);
+			name = NateAIUITests;
+			productName = NateAIUITests;
+			productReference = 63C2B35B28798F190055FCDA /* NateAIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63C2B32F28798F160055FCDA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					63C2B33628798F160055FCDA = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					63C2B34F28798F190055FCDA = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 63C2B33628798F160055FCDA;
+					};
+					63C2B35A28798F190055FCDA = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 63C2B33628798F160055FCDA;
+					};
+				};
+			};
+			buildConfigurationList = 63C2B33228798F160055FCDA /* Build configuration list for PBXProject "NateAI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 63C2B32E28798F160055FCDA;
+			productRefGroup = 63C2B33828798F160055FCDA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63C2B33628798F160055FCDA /* NateAI */,
+				63C2B34F28798F190055FCDA /* NateAITests */,
+				63C2B35A28798F190055FCDA /* NateAIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63C2B33528798F160055FCDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63C2B34A28798F190055FCDA /* LaunchScreen.storyboard in Resources */,
+				63C2B34728798F190055FCDA /* Assets.xcassets in Resources */,
+				63C2B34228798F160055FCDA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63C2B34E28798F190055FCDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63C2B35928798F190055FCDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63C2B33328798F160055FCDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63C2B33F28798F160055FCDA /* ViewController.swift in Sources */,
+				63C2B34528798F160055FCDA /* NateAI.xcdatamodeld in Sources */,
+				63C2B33B28798F160055FCDA /* AppDelegate.swift in Sources */,
+				63C2B33D28798F160055FCDA /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63C2B34C28798F190055FCDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63C2B35528798F190055FCDA /* NateAITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63C2B35728798F190055FCDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63C2B36028798F190055FCDA /* NateAIUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		63C2B35228798F190055FCDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63C2B33628798F160055FCDA /* NateAI */;
+			targetProxy = 63C2B35128798F190055FCDA /* PBXContainerItemProxy */;
+		};
+		63C2B35D28798F190055FCDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63C2B33628798F160055FCDA /* NateAI */;
+			targetProxy = 63C2B35C28798F190055FCDA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		63C2B34028798F160055FCDA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63C2B34128798F160055FCDA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		63C2B34828798F190055FCDA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63C2B34928798F190055FCDA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		63C2B36228798F190055FCDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		63C2B36328798F190055FCDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		63C2B36528798F190055FCDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C849J6K43N;
+				INFOPLIST_FILE = NateAI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.RasSmolen.NateAI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		63C2B36628798F190055FCDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C849J6K43N;
+				INFOPLIST_FILE = NateAI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.RasSmolen.NateAI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		63C2B36828798F190055FCDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C849J6K43N;
+				INFOPLIST_FILE = NateAITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.RasSmolen.NateAITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NateAI.app/NateAI";
+			};
+			name = Debug;
+		};
+		63C2B36928798F190055FCDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C849J6K43N;
+				INFOPLIST_FILE = NateAITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.RasSmolen.NateAITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NateAI.app/NateAI";
+			};
+			name = Release;
+		};
+		63C2B36B28798F190055FCDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C849J6K43N;
+				INFOPLIST_FILE = NateAIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.RasSmolen.NateAIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NateAI;
+			};
+			name = Debug;
+		};
+		63C2B36C28798F190055FCDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C849J6K43N;
+				INFOPLIST_FILE = NateAIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.RasSmolen.NateAIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NateAI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63C2B33228798F160055FCDA /* Build configuration list for PBXProject "NateAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63C2B36228798F190055FCDA /* Debug */,
+				63C2B36328798F190055FCDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63C2B36428798F190055FCDA /* Build configuration list for PBXNativeTarget "NateAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63C2B36528798F190055FCDA /* Debug */,
+				63C2B36628798F190055FCDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63C2B36728798F190055FCDA /* Build configuration list for PBXNativeTarget "NateAITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63C2B36828798F190055FCDA /* Debug */,
+				63C2B36928798F190055FCDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63C2B36A28798F190055FCDA /* Build configuration list for PBXNativeTarget "NateAIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63C2B36B28798F190055FCDA /* Debug */,
+				63C2B36C28798F190055FCDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		63C2B34328798F160055FCDA /* NateAI.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				63C2B34428798F160055FCDA /* NateAI.xcdatamodel */,
+			);
+			currentVersion = 63C2B34428798F160055FCDA /* NateAI.xcdatamodel */;
+			path = NateAI.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 63C2B32F28798F160055FCDA /* Project object */;
+}
