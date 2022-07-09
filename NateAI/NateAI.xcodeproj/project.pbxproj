@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		631603502879A1190024A18E /* FetchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6316034F2879A1190024A18E /* FetchService.swift */; };
+		631603522879A13F0024A18E /* FetchServiceEndpointEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631603512879A13F0024A18E /* FetchServiceEndpointEnum.swift */; };
+		631603552879A51A0024A18E /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631603542879A51A0024A18E /* Product.swift */; };
+		631603592879AC750024A18E /* DisplayProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631603582879AC750024A18E /* DisplayProductViewModel.swift */; };
 		63C2B33B28798F160055FCDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C2B33A28798F160055FCDA /* AppDelegate.swift */; };
 		63C2B33D28798F160055FCDA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C2B33C28798F160055FCDA /* SceneDelegate.swift */; };
-		63C2B33F28798F160055FCDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C2B33E28798F160055FCDA /* ViewController.swift */; };
+		63C2B33F28798F160055FCDA /* DisplayProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C2B33E28798F160055FCDA /* DisplayProductViewController.swift */; };
 		63C2B34228798F160055FCDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63C2B34028798F160055FCDA /* Main.storyboard */; };
 		63C2B34528798F160055FCDA /* NateAI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 63C2B34328798F160055FCDA /* NateAI.xcdatamodeld */; };
 		63C2B34728798F190055FCDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63C2B34628798F190055FCDA /* Assets.xcassets */; };
@@ -36,10 +40,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6316034F2879A1190024A18E /* FetchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchService.swift; sourceTree = "<group>"; };
+		631603512879A13F0024A18E /* FetchServiceEndpointEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchServiceEndpointEnum.swift; sourceTree = "<group>"; };
+		631603542879A51A0024A18E /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		631603582879AC750024A18E /* DisplayProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayProductViewModel.swift; sourceTree = "<group>"; };
 		63C2B33728798F160055FCDA /* NateAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NateAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63C2B33A28798F160055FCDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63C2B33C28798F160055FCDA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		63C2B33E28798F160055FCDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		63C2B33E28798F160055FCDA /* DisplayProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayProductViewController.swift; sourceTree = "<group>"; };
 		63C2B34128798F160055FCDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		63C2B34428798F160055FCDA /* NateAI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NateAI.xcdatamodel; sourceTree = "<group>"; };
 		63C2B34628798F190055FCDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -78,6 +86,82 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6316034E2879A1070024A18E /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				6316034F2879A1190024A18E /* FetchService.swift */,
+				631603512879A13F0024A18E /* FetchServiceEndpointEnum.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		631603532879A1C00024A18E /* DataStructures */ = {
+			isa = PBXGroup;
+			children = (
+				631603542879A51A0024A18E /* Product.swift */,
+			);
+			path = DataStructures;
+			sourceTree = "<group>";
+		};
+		631603562879AC250024A18E /* DisplayProduct */ = {
+			isa = PBXGroup;
+			children = (
+				63C2B33E28798F160055FCDA /* DisplayProductViewController.swift */,
+				631603582879AC750024A18E /* DisplayProductViewModel.swift */,
+			);
+			path = DisplayProduct;
+			sourceTree = "<group>";
+		};
+		631603572879AC500024A18E /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				631603562879AC250024A18E /* DisplayProduct */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		6316035A2879AC9D0024A18E /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				63C2B33A28798F160055FCDA /* AppDelegate.swift */,
+				63C2B33C28798F160055FCDA /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		6316035B2879ACB20024A18E /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				63C2B34628798F190055FCDA /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		6316035E2879AD170024A18E /* MainStoryBoard&LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				63C2B34028798F160055FCDA /* Main.storyboard */,
+				63C2B34828798F190055FCDA /* LaunchScreen.storyboard */,
+			);
+			path = "MainStoryBoard&LaunchScreen";
+			sourceTree = "<group>";
+		};
+		6316035F2879AD430024A18E /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				63C2B34328798F160055FCDA /* NateAI.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		631603602879AD4D0024A18E /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				63C2B34B28798F190055FCDA /* Info.plist */,
+			);
+			path = Plist;
+			sourceTree = "<group>";
+		};
 		63C2B32E28798F160055FCDA = {
 			isa = PBXGroup;
 			children = (
@@ -101,14 +185,14 @@
 		63C2B33928798F160055FCDA /* NateAI */ = {
 			isa = PBXGroup;
 			children = (
-				63C2B33A28798F160055FCDA /* AppDelegate.swift */,
-				63C2B33C28798F160055FCDA /* SceneDelegate.swift */,
-				63C2B33E28798F160055FCDA /* ViewController.swift */,
-				63C2B34028798F160055FCDA /* Main.storyboard */,
-				63C2B34628798F190055FCDA /* Assets.xcassets */,
-				63C2B34828798F190055FCDA /* LaunchScreen.storyboard */,
-				63C2B34B28798F190055FCDA /* Info.plist */,
-				63C2B34328798F160055FCDA /* NateAI.xcdatamodeld */,
+				6316035A2879AC9D0024A18E /* Delegates */,
+				631603572879AC500024A18E /* Features */,
+				631603532879A1C00024A18E /* DataStructures */,
+				6316034E2879A1070024A18E /* Networking */,
+				6316035B2879ACB20024A18E /* Assets */,
+				6316035E2879AD170024A18E /* MainStoryBoard&LaunchScreen */,
+				631603602879AD4D0024A18E /* Plist */,
+				6316035F2879AD430024A18E /* CoreData */,
 			);
 			path = NateAI;
 			sourceTree = "<group>";
@@ -261,10 +345,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63C2B33F28798F160055FCDA /* ViewController.swift in Sources */,
+				63C2B33F28798F160055FCDA /* DisplayProductViewController.swift in Sources */,
 				63C2B34528798F160055FCDA /* NateAI.xcdatamodeld in Sources */,
+				631603522879A13F0024A18E /* FetchServiceEndpointEnum.swift in Sources */,
+				631603592879AC750024A18E /* DisplayProductViewModel.swift in Sources */,
 				63C2B33B28798F160055FCDA /* AppDelegate.swift in Sources */,
 				63C2B33D28798F160055FCDA /* SceneDelegate.swift in Sources */,
+				631603502879A1190024A18E /* FetchService.swift in Sources */,
+				631603552879A51A0024A18E /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
