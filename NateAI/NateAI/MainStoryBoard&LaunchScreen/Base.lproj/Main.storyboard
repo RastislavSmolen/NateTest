@@ -3,15 +3,16 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Display ProductVC-->
+        <!--Display Product View Controller-->
         <scene sceneID="7lZ-qb-HWD">
             <objects>
-                <collectionViewController id="Spj-Qj-B08" customClass="DisplayProductVC" customModule="NateAI" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="Spj-Qj-B08" customClass="DisplayProductViewController" customModule="NateAI" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="dDJ-Lq-Hwk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,17 +25,26 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCell" id="Y1p-An-6zi" customClass="ProductCell" customModule="NateAI" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                <rect key="frame" x="0.0" y="0.0" width="195" height="195"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="H2W-bf-Itj">
-                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="195" height="195"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yQ1-RX-4o9">
-                                            <rect key="frame" x="-56" y="0.0" width="240" height="128"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yQ1-RX-4o9">
+                                            <rect key="frame" x="0.0" y="0.0" width="195" height="195"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="195" id="5ZM-QO-GQd"/>
+                                                <constraint firstAttribute="width" constant="195" id="zyF-d4-WQP"/>
+                                            </constraints>
                                         </imageView>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="yQ1-RX-4o9" firstAttribute="leading" secondItem="H2W-bf-Itj" secondAttribute="leading" id="DnN-u6-bPK"/>
+                                        <constraint firstAttribute="trailing" secondItem="yQ1-RX-4o9" secondAttribute="trailing" id="WBl-yS-l4D"/>
+                                        <constraint firstAttribute="bottom" secondItem="yQ1-RX-4o9" secondAttribute="bottom" id="bq6-Ia-O7U"/>
+                                        <constraint firstItem="yQ1-RX-4o9" firstAttribute="top" secondItem="H2W-bf-Itj" secondAttribute="top" id="cG0-S0-x7O"/>
+                                    </constraints>
                                 </collectionViewCellContentView>
                                 <connections>
                                     <outlet property="productImageView" destination="yQ1-RX-4o9" id="bCi-dr-eGJ"/>
@@ -46,10 +56,29 @@
                             <outlet property="delegate" destination="Spj-Qj-B08" id="bHH-1O-9MZ"/>
                         </connections>
                     </collectionView>
+                    <connections>
+                        <segue destination="SS5-HX-D8t" kind="show" identifier="ShowDetail" id="fLE-R0-l2p"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xgt-fn-6cK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="688" y="50"/>
+            <point key="canvasLocation" x="712" y="29"/>
+        </scene>
+        <!--Product Detail View Controller-->
+        <scene sceneID="vJY-41-c9g">
+            <objects>
+                <viewController id="SS5-HX-D8t" customClass="ProductDetailViewController" customModule="NateAI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="On4-fe-lis">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="8sU-aO-wPN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="31E-h7-CMI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lre-Vw-SD3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1671" y="29"/>
         </scene>
     </scenes>
     <resources>

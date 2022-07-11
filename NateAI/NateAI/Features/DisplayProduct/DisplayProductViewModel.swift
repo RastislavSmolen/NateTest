@@ -3,7 +3,7 @@ import Foundation
 class ProdcutListViewModel {
     
     var networking: Networkable
-    let VC = DisplayProductVC()
+    let VC = DisplayProductViewController()
     init(networking: Networkable = Networking()) {
         self.networking = networking
     }

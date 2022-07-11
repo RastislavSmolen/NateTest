@@ -1,17 +1,10 @@
 
 import UIKit
 
-class ProductCell: UICollectionViewCell {
-    
-    @IBOutlet var productImageView: UIImageView!
-    
-}
-class DisplayProductVC: UICollectionViewController {
+class DisplayProductViewController: UICollectionViewController {
     
     var product: Products?
-    
-    private let itemsPerRow: CGFloat = 2
-    var section = Int()
+    var i = Int()
     
     private let sectionInsets = UIEdgeInsets(
         top: 0,
@@ -27,8 +20,6 @@ class DisplayProductVC: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.collectionView.delegate = self
-        self.collectionView.dataSource = self
         setupModel()
         fetchData()
     }
@@ -76,54 +67,59 @@ class DisplayProductVC: UICollectionViewController {
 
 // MARK: - Collection View Setup
 
-extension DisplayProductVC {
+extension DisplayProductViewController {
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        i = indexPath.row
+        performSegue(withIdentifier: "ShowDetail", sender: collectionView)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let destinationVC = segue.destination as? ProductDetailViewController else { return }
+        destinationVC.product = product
+        destinationVC.i = i
+    }
+    
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         guard let productCount = product?.products[section].images[section].count else {return 1}
-        self.section = section
         return productCount
     }
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProductCell", for: indexPath) as? ProductCell else {return UICollectionViewCell()}
-        let image = UIImage()
         
         cell.layer.borderWidth = 1
         cell.layer.borderColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)
         
-        let itemNumber = NSNumber(value: indexPath.item)
+        let itemNumber = NSNumber(value: indexPath.row)
         
         if let cachedImage = self.cache.object(forKey: itemNumber) {
+            
             print("Using a cached image for item: \(itemNumber)")
             cell.productImageView.image = cachedImage
+            
         } else {
-            // 4
             self.loadImage(indexPath: indexPath.row) { [weak self] (image) in
+                
                 guard let self = self, let image = image else { return }
                 
-                cell.productImageView.image = image
-                
-                // 5
                 self.cache.setObject(image, forKey: itemNumber)
+                cell.productImageView.image = image
             }
         }
         return cell
     }
 }
 
-
 // MARK: - Collection View Flow Layout Delegate
 
-extension DisplayProductVC: UICollectionViewDelegateFlowLayout {
+extension DisplayProductViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        let paddingSpace = sectionInsets.left * (itemsPerRow + 1)
-        let availableWidth = view.frame.width
-        let widthPerItem = availableWidth / itemsPerRow
-        
-        return CGSize(width: widthPerItem, height: widthPerItem)
+        return CGSize(width: 195, height: 195)
     }
     
     func collectionView( _ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int ) -> UIEdgeInsets {
@@ -133,29 +129,4 @@ extension DisplayProductVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return sectionInsets.left
     }
-}
-
-import UIKit
-extension UIImage {
-    func validateImage(imageUrl:String) -> UIImage {
-        let defaultImage = URL(string: "https://cdn.pixabay.com/photo/2017/09/22/21/43/table-2777180_1280.jpg")
-        let imageURL = URL(string: imageUrl)
-        
-        var image = UIImage()
-        
-        guard let defImage = defaultImage else { return UIImage() }
-        
-        let imageUrl = imageURL ?? defImage
-        
-        if let imageData = try? Data(contentsOf: imageUrl) {
-            guard let imageData = UIImage(data: imageData) else { return UIImage() }
-            image = imageData
-        } else {
-            guard let defaultImageData = try? Data(contentsOf: defImage) else { return UIImage() }
-            guard let imageData = UIImage(data: defaultImageData) else { return UIImage() }
-            image = imageData
-        }
-        return image
-    }
-    
 }
