@@ -7,6 +7,7 @@ protocol Networkable {
 
 class Networking: Networkable {
     func fetchData<T: Codable>(url: URL, type: T.Type, completionHandler: @escaping (Result < T, Error >) -> Void) {
+        
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = "POST"
         

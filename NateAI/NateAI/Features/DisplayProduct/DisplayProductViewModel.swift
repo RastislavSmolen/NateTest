@@ -3,7 +3,7 @@ import Foundation
 class ProdcutListViewModel {
     
     var networking: Networkable
-    
+    let VC = DisplayProductVC()
     init(networking: Networkable = Networking()) {
         self.networking = networking
     }
@@ -14,7 +14,8 @@ class ProdcutListViewModel {
         
         networking.fetchData(url: urlString, type: Products.self) { (result) in
             switch result {
-            case.success(let response): completion(response,nil)
+            case.success(let response):
+                completion(response,nil)
             case.failure(let error): completion(nil,error.localizedDescription)
                 DispatchQueue.main.async {
                     print(error.self)
