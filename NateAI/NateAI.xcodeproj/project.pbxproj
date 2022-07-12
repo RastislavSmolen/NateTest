@@ -13,6 +13,7 @@
 		631603592879AC750024A18E /* DisplayProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631603582879AC750024A18E /* DisplayProductViewModel.swift */; };
 		63160363287C65CE0024A18E /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63160362287C65CE0024A18E /* ProductDetailViewController.swift */; };
 		63160366287C66ED0024A18E /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63160365287C66ED0024A18E /* ProductCollectionViewCell.swift */; };
+		63160369287DAA310024A18E /* ProductDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63160368287DAA310024A18E /* ProductDetailCollectionViewCell.swift */; };
 		63C2B33B28798F160055FCDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C2B33A28798F160055FCDA /* AppDelegate.swift */; };
 		63C2B33D28798F160055FCDA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C2B33C28798F160055FCDA /* SceneDelegate.swift */; };
 		63C2B33F28798F160055FCDA /* DisplayProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C2B33E28798F160055FCDA /* DisplayProductViewController.swift */; };
@@ -48,6 +49,7 @@
 		631603582879AC750024A18E /* DisplayProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayProductViewModel.swift; sourceTree = "<group>"; };
 		63160362287C65CE0024A18E /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
 		63160365287C66ED0024A18E /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		63160368287DAA310024A18E /* ProductDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailCollectionViewCell.swift; sourceTree = "<group>"; };
 		63C2B33728798F160055FCDA /* NateAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NateAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63C2B33A28798F160055FCDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63C2B33C28798F160055FCDA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				63160362287C65CE0024A18E /* ProductDetailViewController.swift */,
+				63160368287DAA310024A18E /* ProductDetailCollectionViewCell.swift */,
 			);
 			path = ProductDetailView;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 				63160363287C65CE0024A18E /* ProductDetailViewController.swift in Sources */,
 				631603522879A13F0024A18E /* FetchServiceEndpointEnum.swift in Sources */,
 				631603592879AC750024A18E /* DisplayProductViewModel.swift in Sources */,
+				63160369287DAA310024A18E /* ProductDetailCollectionViewCell.swift in Sources */,
 				63C2B33B28798F160055FCDA /* AppDelegate.swift in Sources */,
 				63C2B33D28798F160055FCDA /* SceneDelegate.swift in Sources */,
 				631603502879A1190024A18E /* FetchService.swift in Sources */,
